@@ -1,7 +1,5 @@
 #Gerente de controle para Escola Bíblica Dominical em igrejas.
-================================================================
 
-Versão mobile criada na base phonegap para build online da adobe. 
 ![alt text](http://i.imgur.com/GPC3k7X.png "Screen 1")
 ![alt text](http://i.imgur.com/EHYrR0j.png "Screen 2")
 ![alt text](http://i.imgur.com/zchLoBZ.png "Screen 3")
