@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EBD Gerente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
+    <!--<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+    <!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+    <link rel="stylesheet" href="themes/ebd.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="moment.js"></script>
+    <script src="app.js"></script>
+    <!-- Core CSS file -->
+</head>
+
+<body>
+
+<div data-role="page" id="index">
+
+    <div data-role="header">
+        <a href="#left-panel" data-role="button" data-icon="bars"
+           data-shadow="false"
+           data-iconshadow="false" class="ui-btn-left"
+           class="ui-icon-nodisc">Menu</a>
+        <h1>EBD</h1>
+        <a href="#right-panel" data-role="button" data-icon="gear"
+           data-shadow="false"
+           data-iconshadow="false" class="ui-btn-right"
+           class="ui-icon-nodisc" data-iconpos="notext"></a>
+    </div><!-- /header -->
+
+    <div data-role="panel" data-display="overlay" id="left-panel">
+        <ul data-role="listview" data-theme="b">
+            <li data-role="list-divider" data-theme="a"><center>MENU</center></li>
+            <li data-icon="home"><a href="#" data-rel="close">Início</a></li>
+            <li><a href="add_aluno.html" id="add_aluno_btn">Adicionar Aluno </a></li>
+            <li><a href="#" id="add_oferta_btn">Adicionar Oferta </a></li>
+            <li><a href="#" id="add_despesa_btn">Adicionar Despesa</a></li>
+            <li><a href="add_visitante.html" id="add_visitante_btn">Adicionar Visitante </a></li>
+            <li><a href="#" id="enviar_relatorio_btn">Enviar Relatório </a></li>
+            <li><a href="#" id="ver_relatorio_btn">Ver Relatório </a></li>
+            <li data-icon="delete"><a href="#" data-rel="close">Fechar </a></li>
+        </ul>
+    </div>
+    <!-- /panel -->
+
+    <div data-role="panel" data-display="overlay" id="right-panel" data-position="right">
+        <ul data-role="listview" data-theme="b">
+            <li data-role="list-divider" data-theme="a"><center>OPTIONS</center></li>
+            <li><a href="#" id="limpar_caixa_btn">Limpar Caixa</a></li>
+            <li><a href="#" id="finalizar_trimestre_btn">Finalizar Trimestre</a></li>
+            <li><a href="#" id="hard_reset_btn">Hard Reset</a></li>
+            <li data-icon="delete"><a href="#" data-rel="close">Fechar </a></li>
+        </ul>
+    </div>
+    <!-- /panel -->
+
+    <div role="main" class="ui-content">
+        <hr/>
+        <center>
+            <label>Caixa: <h2 id="caixa">0,00</h2></label>
+        </center>
+        <hr/>
+        <ul data-theme="b" data-role="listview" id="lista" data-filter="true" data-inset="true">
+        </ul>
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+        <h4>&copy; CONNECT</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>

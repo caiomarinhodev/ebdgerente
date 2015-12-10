@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!--<script type="text/javascript" src="cordova.js"></script>-->
+    <script src="moment.js"></script>
+    <script src="app.js"></script>
+    <!-- Core CSS file -->
+</head>
+
+<body>
+
+<div data-role="page" id="choose">
+
+    <div data-role="header">
+        <h1>EBD</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <center><h2>O que deseja fazer com este aluno?</h2></center>
+        <fieldset class="ui-grid-b">
+            <div class="ui-block-a">
+                <a data-role="button" href="view_aluno.html" id="ver">Ver</a>
+            </div>
+            <div class="ui-block-b">
+                <button id="presente" type="button">Presente</button>
+            </div>
+            <div class="ui-block-c">
+                <button id="falta" type="button">Falta</button>
+            </div>
+        </fieldset>
+
+    </div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
